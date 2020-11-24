@@ -5,8 +5,8 @@ export class User {
     password:string;
     constructor(){
         this.id=0;
-        this.emailId="";
-        this.userName="";
-        this.password="";
+        this.emailId="tamst09@gmail.com";
+        this.userName="tamst09";
+        this.password="tamls1999";
     }
 }

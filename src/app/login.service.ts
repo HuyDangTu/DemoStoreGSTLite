@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from './user';
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
-export class RegistrationService {
+export class LoginService {
 
   constructor(private _http: HttpClient) { }
   public loginUserFromRemote(user: User):Observable<any>{
