@@ -7,7 +7,6 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class LoginService {
-
   constructor(private _http: HttpClient) { }
   public loginUserFromRemote(user: User):Observable<any>{
     return this._http.post<any>("http://localhost:8080/api/v1/user/signin", { username: user.userName, password: user.password});
