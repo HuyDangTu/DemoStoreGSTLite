@@ -7,3 +7,21 @@
 .panel-body input[type=checkbox]:checked + label { text-decoration: line-through;color: rgb(128, 144, 160); }
 .list-group-item:hover, a.list-group-item:focus {text-decoration: none;background-color: rgb(245, 245, 245);}
 .list-group { margin-bottom:0px; }
+.action-buttons{
+    display: flex;
+}
+.wrapper{
+  
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+}
+.button-add{
+    background:  rgb(127, 157, 255);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+}
