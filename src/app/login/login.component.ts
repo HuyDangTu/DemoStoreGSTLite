@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
   loginUser(){
     this._service.loginUserFromRemote(this.user).subscribe(
       data => {
@@ -24,11 +25,11 @@ export class LoginComponent implements OnInit {
         this._router.navigate(['/products']);
       },
       error => {
-        console.log("Exception occured");
         this.msg = "Bad credentials, please enter valid Email and Password";
       }
     );
   }
+  
   gotoregistration(){
     console.log('hello from register');
     this._router.navigate(['/registration']);
